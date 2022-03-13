@@ -6,11 +6,11 @@ import Form from "./my Component/Form";
 import Alert from "./my Component/Alert";
 import About from "./my Component/About";
 // import { render } from "react-dom";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+// } from "react-router-dom";
 
 
 
@@ -52,25 +52,25 @@ const toggleMode = () => {
 
   return (
     <>
-    <Router>
+    {/* <Router> */}
       <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} text={text}/>
       <Alert  alert={alert}/>
       <div className="container my-3">
-         <Routes>
-          <Route path="/About" element={<About />} />
+         {/* <Routes>
+          <Route path="/About" element={<About />} /> */}
           {/* <Route path="/Form" element={<Form title="Enter the Text to analize below" mode={mode} showAlert={showAlert}/>} /> */}
             {/* </Route> */}
-            <Route path="/" element={<Form title="Enter the text to analyze below" mode={mode} showAlert={showAlert}/>}/>
-              
+            {/* <Route path="/" element={}/> */}
+            <Form title="Enter the text to analyze below" mode={ mode } showAlert={ showAlert } />
             {/* </Route> */}
           {/* </Route> */}
           {/* <Route path="/Form">
         
           </Route> */}
           
-        </Routes>
+        {/* </Routes> */}
       </div>
-     </Router>
+     {/* </Router> */}
     </>
   )
 }
