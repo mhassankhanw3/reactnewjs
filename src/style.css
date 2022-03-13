@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: start;
+    font-family: sans-serif;
+    background-color: rgb(250, 125, 210);
+    color: rgb(14, 2, 42);
+}
+
+@media screen and (min-width:1060px){
+    .booklist{
+        grid-template-columns: repeat(3, 1fr);
+        /* display: block; */
+    }
+
+}
+
+.container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+    padding: 25px 20px;
+    width: 450px;
+    border-radius: 4px;
+    display: block;
+    margin: 45px auto;
+    /* margin-top: 200px; */
+}
+
+/* .list-head{
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    color: rgb(194, 188, 243);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    /* font-weight: 800; */
+/* } */ 
+
+.app-head{
+    margin-bottom: 20px;
+    font-size: 1.75rem;
+    /* font-weight: lighter; */
+}
+.btn{
+    width: 405px;
+    margin: 20px auto 0px;
+    display: block;
+    padding: 8px 4px;
+    background-color: rgb(250, 104, 204);
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 0.7px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    /* transition: 4s; */
+    transition-timing-function: ease-out;
+}
+.person{
+    /* margin-top: 10px; */
+    /* border: 1px solid black; */
+    display: flex;
+    padding: 6px 10px;
+}
+
+.person img{
+    cursor: pointer;
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: var(--light-shadow);
+}
+.myDiv{
+    margin-left: 13px;
+    /* border: 1px solid brown; */
+    padding: 1px 2px;
+    margin-top: 2px;
+    width: 140px;
+    /* text-align: center; */
+}
+.myDiv h4 {
+    letter-spacing: 1px;
+    margin-top: 12px;
+    font-size: 18px;
+    color: rgb(2, 2, 93);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.myDiv p{
+    /* font-weight: bold; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 2px;
+    font-size: 16px;
+    color: rgb(73, 73, 223);
+}
